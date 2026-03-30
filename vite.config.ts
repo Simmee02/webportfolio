@@ -3,12 +3,14 @@ import react from '@vitejs/plugin-react';
 import { nodePolyfills } from 'vite-plugin-node-polyfills';
 import tailwindcss from '@tailwindcss/vite';
 import svgr from 'vite-plugin-svgr';
+import path from 'path';
 
 export default defineConfig({
   plugins: [react(), nodePolyfills(), tailwindcss(), svgr()],
   resolve: {
     alias: {
       crypto: 'rollup-plugin-node-polyfills/polyfills/crypto-browserify',
+      '@': path.resolve(__dirname, './src'),
     },
   },
   optimizeDeps: {
