@@ -36,7 +36,7 @@ export const projectDetails: Record<string, ProjectDetail> = {
     category: "해커톤",
     title: "청소 연구소 [우리집]\nFE 개발자",
     subtitle: "청소 서비스 고도화 및 신규 기능 전략 제안",
-    period: "2025.00 ~ 2025.00",
+    period: "2026.01 ~ 2026.03",
     role: "Frontend Developer",
     description:
       "청소 외주 플랫폼 “청소연구소” 서비스 고도화 프로젝트입니다. 고객별 만족 기준 차이로 발생하는 불편을 해결하고자 공동 생활 관리 기능을 기획하고, 이를 통해 가사 분담 데이터를 축적해 매니저 파견 시 맞춤형 가이드로 활용할 수 있는 서비스 구조를 설계했습니다.",
