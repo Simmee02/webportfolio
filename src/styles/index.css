@@ -1,9 +1,11 @@
 @import "./fonts.css";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
+@theme {
+  --color-main-black: #333333;
+  --color-main-blue: #428EFF;
+}
 
 /* Letter 올라오는 애니메이션*/
 @keyframes slideUpFadeIn {

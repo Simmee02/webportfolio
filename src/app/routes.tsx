@@ -1,5 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom';
 import App from './App';
+import Main from '@/pages/MainPage';
+
 
 export const router = createBrowserRouter([
   {
@@ -7,7 +9,7 @@ export const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <div className="p-4">FitLink Home</div>,
+        element: <Main />,
       },
     ],
   },
