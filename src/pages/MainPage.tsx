@@ -103,7 +103,7 @@ export default function Main() {
     <div className="bg-[#F6F6F6]">
       {/* 메인 섹션 */}
       <div className="relative min-h-screen overflow-hidden md:h-screen">
-        <div className="px-6 pt-20 max-w-3xl sm:px-8 md:mt-30 md:mx-20 md:px-0">
+        <div className="px-6 pt-10 max-w-3xl sm:px-8 md:mt-30 md:mx-20 md:px-0">
           <p className="text-main-blue text-lg font-medium mb-3 sm:text-xl md:text-2xl">
             Portfolio
           </p>
