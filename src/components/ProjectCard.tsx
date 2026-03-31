@@ -18,10 +18,12 @@ export default function ProjectCard({ project, onClick, index }: Props) {
       whileHover={{ y: -4 }}
       onClick={onClick}
     >
-      <p className={`text-xs mb-3 ${project.categoryColor ?? "text-gray-400"}`}>
+      <p
+        className={`mt-4 text-sm mb-1 font-extrabold ${project.categoryColor ?? "text-gray-400"}`}
+      >
         {project.category}
       </p>
-      <h3 className="text-lg font-bold text-main-black mb-1 whitespace-pre-line">
+      <h3 className="text-lg font-bold text-main-black mb-2 whitespace-pre-line">
         {project.title}
       </h3>
       <p className="text-xs text-gray-400 mb-4">{project.description}</p>
@@ -39,7 +41,7 @@ export default function ProjectCard({ project, onClick, index }: Props) {
       {project.techImages && (
         <div className="flex flex-wrap items-center gap-3 pt-4 pb-10">
           {project.techImages.map((img, j) => (
-            <img key={j} src={img} className="w-8 h-8 object-contain" />
+            <img key={j} src={img} className="w-10 h-10 object-contain" />
           ))}
         </div>
       )}
