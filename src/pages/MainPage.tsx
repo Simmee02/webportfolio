@@ -6,8 +6,9 @@ import about01 from "@/assets/img_about_01.png";
 import about02 from "@/assets/img_about_02.png";
 import about03 from "@/assets/img_about_03.png";
 import about04 from "@/assets/img_about_04.png";
+import imgGithub from "@/assets/logos/img_github.png";
 import ProjectCard from "@/components/ProjectCard";
-import { projects } from "@/data/projects";
+import { projects } from "@/data/projects"; 
 
 /// 메인 키워드 버블 요소
 type KeywordItem = {
@@ -436,7 +437,7 @@ export default function Main() {
             className="bg-white rounded-2xl px-8 py-5 flex items-center justify-between"
           >
             <div className="flex items-center gap-4">
-              <img src="/github-icon.svg" className="w-8 h-8" />
+              <img src={imgGithub} className="w-8 h-8" />
               <span className="text-lg font-bold text-main-black">
                 깃허브 바로가기
               </span>

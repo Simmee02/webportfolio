@@ -25,7 +25,7 @@ export default function ProjectCard({ project, onClick, index }: Props) {
         {project.title}
       </h3>
       <p className="text-xs text-gray-400 mb-4">{project.description}</p>
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-2 mb-4">
         {project.stacks.map((stack, j) => (
           <span
             key={j}
@@ -35,6 +35,14 @@ export default function ProjectCard({ project, onClick, index }: Props) {
           </span>
         ))}
       </div>
+
+      {project.techImages && (
+        <div className="flex flex-wrap items-center gap-3 pt-4 pb-10">
+          {project.techImages.map((img, j) => (
+            <img key={j} src={img} className="w-8 h-8 object-contain" />
+          ))}
+        </div>
+      )}
     </motion.div>
   );
 }
