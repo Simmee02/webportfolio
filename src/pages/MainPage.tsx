@@ -38,8 +38,8 @@ const items: Item[] = [
   { type: "keyword", text: "Frontend Developer", dark: false, rotate: -16, x: -120, y: 80 },
   { type: "keyword", text: "Problem Solver", dark: false, rotate: 12, x: -220, y: -4 },
   { type: "keyword", text: "AI Integration", dark: true, rotate: 23, x: 300, y: -26 },
-  { type: "keyword", text: "User-Centered", dark: false, rotate: -5, x: -375, y: 20 },
-  { type: "bubble", src: bubble2, rotate: -8, x: -386, y: 50 },
+  { type: "keyword", text: "User-Centered", dark: false, rotate: -5, x: -175, y: 20 },
+  { type: "bubble", src: bubble2, rotate: -8, x: -186, y: 50 },
 ];
 
 const cardVariants = {
