@@ -76,7 +76,7 @@ export default function Main() {
             Portfolio
           </p>
 
-          <h1 className="text-[24px] leading-[1.25] mb-4 text-main-black sm:text-[30px] md:text-3xl md:leading-tight">
+          <h1 className="text-2xl leading-[1.25] mb-4 text-main-black sm:text-3xl md:text-4xl md:leading-tight">
             <span className="font-medium">안녕하세요.</span>
             <br />
             <span className="font-bold break-keep">
@@ -324,6 +324,7 @@ export default function Main() {
           ))}
         </div>
       </div>
+
       {/* Contact 섹션 */}
       <div className="px-6 py-12 sm:px-8 md:px-20 md:py-20">
         <p className="text-main-blue text-lg font-medium mb-2 md:text-xl">Contact me.</p>
@@ -348,7 +349,6 @@ export default function Main() {
             <div className="shrink-0 bg-main-blue rounded-full w-9 h-9 md:w-10 md:h-10 flex items-center justify-center text-white">→</div>
           </a>
 
-          
           <a
             href="mailto:jysim07@gmail.com"
             className="bg-white rounded-2xl px-4 py-4 sm:px-5 sm:py-5 md:px-8 flex items-center justify-between gap-4"
