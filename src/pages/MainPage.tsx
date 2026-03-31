@@ -18,56 +18,75 @@ type KeywordItem = {
   text: string;
   dark: boolean;
   rotate: number;
-  x?: number;
-  y?: number;
+  left: number;
+  top: number;
 };
 
 type BubbleItem = {
   type: "bubble";
   src: string;
   rotate: number;
-  x?: number;
-  y?: number;
+  left: number;
+  top: number;
 };
 
 type Item = KeywordItem | BubbleItem;
 
 const items: Item[] = [
-  { type: "keyword", text: "Proactive", dark: true, rotate: -50, x: 34, y: 58 },
-  { type: "bubble", src: bubble1, rotate: 0, x: 10, y: 0 },
+  {
+    type: "keyword",
+    text: "Proactive",
+    dark: true,
+    rotate: -40,
+    left: 0,
+    top: 192,
+  },
+  {
+    type: "bubble",
+    src: bubble1,
+    rotate: 0,
+    left: 157,
+    top: 154,
+  },
   {
     type: "keyword",
     text: "Frontend Developer",
     dark: false,
     rotate: -16,
-    x: -120,
-    y: 80,
+    left: 80,
+    top: 220,
   },
   {
     type: "keyword",
     text: "Problem Solver",
     dark: false,
     rotate: 12,
-    x: -220,
-    y: -4,
+    left: 220,
+    top: 128,
   },
   {
     type: "keyword",
     text: "AI Integration",
     dark: true,
     rotate: 23,
-    x: 300,
-    y: -26,
+    left: 443,
+    top: 163,
   },
   {
     type: "keyword",
     text: "User-Centered",
     dark: false,
     rotate: -5,
-    x: -75,
-    y: 20,
+    left: 330,
+    top: 232,
   },
-  { type: "bubble", src: bubble2, rotate: -8, x: -86, y: 50 },
+  {
+    type: "bubble",
+    src: bubble2,
+    rotate: -8,
+    left: 560,
+    top: 255,
+  },
 ];
 
 const cardVariants = {
@@ -130,22 +149,25 @@ export default function Main() {
           </p>
         </div>
 
-        {/* 모바일에서는 버블 숨김 */}
-        <div className="hidden md:flex absolute bottom-24 right-18 flex-wrap max-w-4xl justify-end items-end">
+        {/* md 이상에서만 노출 / absolute + scale */}
+        <div className="hidden md:block absolute bottom-10 right-10 w-[760px] h-[360px] scale-75 lg:scale-90 xl:scale-100 origin-bottom-right">
           {items.map((item, i) => (
             <motion.div
               key={i}
+              className="absolute"
+              style={{
+                left: `${item.left}px`,
+                top: `${item.top}px`,
+              }}
               initial={{
-                y: -200,
+                y: -60,
                 opacity: 0,
                 rotate: item.rotate,
-                x: item.x ?? 0,
               }}
               animate={{
-                y: item.y ?? 0,
+                y: 0,
                 opacity: 1,
                 rotate: item.rotate,
-                x: item.x ?? 0,
               }}
               transition={{
                 delay: i * 0.15,
@@ -458,7 +480,7 @@ export default function Main() {
                   깃허브 바로가기
                 </p>
                 <p className="text-xs sm:text-sm text-gray-400 truncate">
-                  go to Simmee02's Github
+                  go to Simmee02&apos;s Github
                 </p>
               </div>
             </div>
