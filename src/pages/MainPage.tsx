@@ -152,7 +152,7 @@ export default function Main() {
 
         {/* 모바일에서는 버블 이미지 */}
         <div className="flex md:hidden mt-24 px-6 justify-end">
-          <img src={bubbleImage} className="w-[70%] object-contain" />
+          <img src={bubbleImage} className="w-[85%] object-contain" />
         </div>
 
         {/* md 이상에서만 노출 / absolute + scale */}
