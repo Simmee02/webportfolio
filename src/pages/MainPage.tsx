@@ -8,6 +8,7 @@ import about03 from "@/assets/img_about_03.png";
 import about04 from "@/assets/img_about_04.png";
 import imgGithub from "@/assets/logos/img_github.png";
 import imgMail from "@/assets/img_mail.png";
+import bubbleImage from "@/assets/img_bubbles.png";
 import ProjectCard from "@/components/ProjectCard";
 import ProjectModal from "@/components/ProjectModal";
 import { projects } from "@/data/projects";
@@ -147,6 +148,11 @@ export default function Main() {
             <br />
             코드 구조를 이해하고 품질을 개선하는 개발자를 목표로 하고 있습니다.
           </p>
+        </div>
+
+        {/* 모바일에서는 버블 이미지 */}
+        <div className="flex md:hidden mt-24 px-6 justify-end">
+          <img src={bubbleImage} className="w-[70%] object-contain" />
         </div>
 
         {/* md 이상에서만 노출 / absolute + scale */}
