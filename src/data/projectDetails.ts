@@ -1,8 +1,8 @@
 import beforeAfterImage from "@/assets/details/img_id2_detail.png";
 import CheongImage1 from "@/assets/details/img_id1_detail_01.png";
 import CheongImage2 from "@/assets/details/img_id1_detail_02.png";
-import PoomyImage1 from "@/assets/details/img_id3_detail_04.png";
-import PoomyImage2 from "@/assets/details/img_id3_detail_05.png";
+import PoomyImage1 from "@/assets/details/img_id3_detail_04.webp";
+import PoomyImage2 from "@/assets/details/img_id3_detail_05.webp";
 
 
 export type ProjectDetailItem = {
